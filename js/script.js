@@ -1,18 +1,18 @@
 function mediaTemp(){
-    const janeiro = prompt("Qual a temperatura média de Janeiro?")
-    const fevereiro = prompt("Qual a temperatura média de Fevereiro?")
-    const marco = prompt("Qual a temperatura média de Março?")
-    const abril = prompt("Qual a temperatura média de Abril?")
-    const maio = prompt("Qual a temperatura média de Maio?")
-    const junho = prompt("Qual a temperatura média de Junho?")
-    const julho = prompt("Qual a temperatura média de Julho?")
-    const agosto = prompt("Qual a temperatura média de Agosto?")
-    const setembro = prompt("Qual a temperatura média de Setembro?")
-    const outubro = prompt("Qual a temperatura média de Outubro?")
-    const novembro = prompt("Qual a temperatura média de Novembro?")
-    const dezembro = prompt("Qual a temperatura média de Dezembro?")
+    const janeiro = prompt("Qual a temperatura média de Janeiro?") + ' °C'
+    const fevereiro = prompt("Qual a temperatura média de Fevereiro?") + ' °C'
+    const marco = prompt("Qual a temperatura média de Março?") + ' °C'
+    const abril = prompt("Qual a temperatura média de Abril?") + ' °C'
+    const maio = prompt("Qual a temperatura média de Maio?") + ' °C'
+    const junho = prompt("Qual a temperatura média de Junho?") + ' °C'
+    const julho = prompt("Qual a temperatura média de Julho?") + ' °C'
+    const agosto = prompt("Qual a temperatura média de Agosto?") + ' °C'
+    const setembro = prompt("Qual a temperatura média de Setembro?") + ' °C'
+    const outubro = prompt("Qual a temperatura média de Outubro?") + ' °C'
+    const novembro = prompt("Qual a temperatura média de Novembro?") + ' °C'
+    const dezembro = prompt("Qual a temperatura média de Dezembro?") + ' °C'
 
-    const media = (parseFloat(janeiro)+parseFloat(fevereiro)+parseFloat(marco)+parseFloat(abril)+parseFloat(maio)+parseFloat(junho)+parseFloat(julho)+parseFloat(agosto)+parseFloat(setembro)+parseFloat(outubro)+parseFloat(novembro)+parseFloat(dezembro))/12;
+    const media = ((parseFloat(janeiro)+parseFloat(fevereiro)+parseFloat(marco)+parseFloat(abril)+parseFloat(maio)+parseFloat(junho)+parseFloat(julho)+parseFloat(agosto)+parseFloat(setembro)+parseFloat(outubro)+parseFloat(novembro)+parseFloat(dezembro))/12) + ' °C';
     console.log(media);
 
     const mediaMeses = document.getElementById('mediaMeses');
@@ -32,8 +32,12 @@ function mediaTemp(){
     
     const tdJan = document.createElement('td');
     tdJan.innerText = janeiro;
+    console.log(tdJan)
+
     const tdFev = document.createElement('td');
     tdFev.innerText = fevereiro;
+    console.log(tdFev)
+
     const tdMarc = document.createElement('td');
     tdMarc.innerText = marco;
     const tdAbrl = document.createElement('td');
@@ -55,10 +59,14 @@ function mediaTemp(){
     const tdDezem = document.createElement('td');
     tdDezem.innerText = dezembro;
     const tdMed = document.createElement('td');
-    tdMed = media
+    tdMed.innerText = media;
 
     jan.appendChild(tdJan);
+    console.log(jan)
+
     fev.appendChild(tdFev);
+    console.log(fev)
+
     marc.appendChild(tdMarc);
     abrl.appendChild(tdAbrl);
     mai.appendChild(tdMai);
@@ -68,7 +76,23 @@ function mediaTemp(){
     setemb.appendChild(tdSetemb);
     out.appendChild(tdOut);
     novem.appendChild(tdNovem);
-    dezem.appendChild(tdDezem);
+    dezem.appendChild(tdDezem);~
+    med.appendChild(tdMed)
+
+    mediaMeses.appendChild(jan);
+    mediaMeses.appendChild(fev);
+    mediaMeses.appendChild(marc);
+    mediaMeses.appendChild(abrl);
+    mediaMeses.appendChild(mai);
+    mediaMeses.appendChild(jul);
+    mediaMeses.appendChild(jun);
+    mediaMeses.appendChild(agost);
+    mediaMeses.appendChild(setemb);
+    mediaMeses.appendChild(out);
+    mediaMeses.appendChild(novem);
+    mediaMeses.appendChild(dezem);
+    mediaMeses.appendChild(med);
+
     /*const alunos = document.getElementById('alunos');
     const tr = document.createElement('tr');
     const tdNome = document.createElement('td');
