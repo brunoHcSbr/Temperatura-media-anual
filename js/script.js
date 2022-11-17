@@ -92,26 +92,6 @@ function mediaTemp(){
     mediaMeses.appendChild(novem);
     mediaMeses.appendChild(dezem);
     mediaMeses.appendChild(med);
-
-    /*const alunos = document.getElementById('alunos');
-    const tr = document.createElement('tr');
-    const tdNome = document.createElement('td');
-    tdNome.innerText = nome;
-    const tdMatematica = document.createElement('td');
-    tdMatematica.innerText = matematica;
-    const tdPortugues = document.createElement('td');
-    tdPortugues.innerText = portugues;
-    const tdCiencia = document.createElement('td');
-    tdCiencia.innerText = ciencia;
-    const tdMedia = document.createElement('td');
-    tdMedia.innerText = media;
-
-    tr.appendChild(tdNome);
-    tr.appendChild(tdMatematica);
-    tr.appendChild(tdPortugues);
-    tr.appendChild(tdCiencia);
-    tr.appendChild(tdMedia);
-    alunos.appendChild(tr);*/
 }
 document.getElementById('add').addEventListener('click',mediaTemp);
 //window.addEventListener('load',mediaTemp);
